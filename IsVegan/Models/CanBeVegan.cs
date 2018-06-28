@@ -1,10 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using IsVegan.Data;
+using System.Collections.Generic;
 
-namespace IsVegan.Data
+namespace IsVegan.Models
 {
   public class CanBeVegan
   {
-    private List<string> data;
+    private readonly List<string> data;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="CanBeVegan"/> class.
