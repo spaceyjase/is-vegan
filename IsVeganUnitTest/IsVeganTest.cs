@@ -1,6 +1,4 @@
-﻿using System;
-using System.Linq;
-using IsVegan.Models;
+﻿using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace IsVeganUnitTest
@@ -8,7 +6,7 @@ namespace IsVeganUnitTest
   [TestClass]
   public class IsVeganTest
   {
-    readonly IsVegan.Models.IsVegan isVegan = new IsVegan.Models.IsVegan();
+    private readonly IsVegan.Models.IsVegan isVegan = new IsVegan.Models.IsVegan();
 
     [TestMethod]
     public void TrueForEmptyString()
