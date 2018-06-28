@@ -51,6 +51,7 @@
     <Compile Include="CanBeVegan.cs" />
     <Compile Include="IsVeganTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IngredientCheckerUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

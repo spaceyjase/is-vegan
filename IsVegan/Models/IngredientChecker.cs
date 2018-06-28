@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace IsVegan.Models
 {
-  public class IngredientChecker
+  public partial class IngredientChecker
   {
-    private CanBeVegan canBeVegan;
-    private IsVegan isVegan;
+    private CanBeVegan canBeVegan = new CanBeVegan();
+    private IsVegan isVegan = new IsVegan();
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="IngredientChecker"/> class.
-    /// </summary>
-    public IngredientChecker()
+    public FilteredIngredients CheckIngredients(string[] ingredientsToCheck)
     {
+      return new FilteredIngredients(
+        isVegan.ContainsNonVeganIngredients(ingredientsToCheck),
+        canBeVegan.ContainsFlaggedIngredients(ingredientsToCheck)
+      );
     }
   }
 }
