@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsVegan", "IsVegan\IsVegan.csproj", "{4FE94381-697F-4598-83C5-4847244F43FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsVeganUnitTest", "IsVeganUnitTest\IsVeganUnitTest.csproj", "{B280F42A-33DE-42D7-B394-359E297C860A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4FE94381-697F-4598-83C5-4847244F43FD} = {4FE94381-697F-4598-83C5-4847244F43FD}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{4FE94381-697F-4598-83C5-4847244F43FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FE94381-697F-4598-83C5-4847244F43FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FE94381-697F-4598-83C5-4847244F43FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B280F42A-33DE-42D7-B394-359E297C860A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B280F42A-33DE-42D7-B394-359E297C860A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B280F42A-33DE-42D7-B394-359E297C860A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B280F42A-33DE-42D7-B394-359E297C860A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

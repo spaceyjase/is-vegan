@@ -7,7 +7,7 @@ namespace IsVegan
     static void Main(string[] args)
     {
       CanBeVegan canBeVegan = new CanBeVegan();
-      NonVegan nonVegan = new NonVegan();
+      Models.IsVegan isVegan = new Models.IsVegan();
     }
   }
 }
