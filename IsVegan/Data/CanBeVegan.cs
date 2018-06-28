@@ -1,11 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace IsVegan.Data
 {
@@ -18,15 +11,7 @@ namespace IsVegan.Data
     /// </summary>
     public CanBeVegan()
     {
-      var assembly = Assembly.GetExecutingAssembly();
-      using (Stream stream = assembly.GetManifestResourceStream("IsVegan.Resources.canbevegan.json"))
-      {
-        using (StreamReader reader = new StreamReader(stream))
-        {
-          string json = reader.ReadToEnd();
-          data = JsonConvert.DeserializeObject<List<string>>(json);
-        }
-      }
+      data = new List<string>(DataUtility.LoadDataFromResource("IsVegan.Resources.canbevegan.json"));
     }
   }
 }

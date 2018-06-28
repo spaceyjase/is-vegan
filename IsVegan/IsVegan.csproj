@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\DataUtility.cs" />
     <Compile Include="Data\NonVegan.cs" />
     <Compile Include="Data\CanBeVegan.cs" />
     <Compile Include="Program.cs" />
